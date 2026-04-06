@@ -155,10 +155,5 @@ done
 * **Symbol table:** hashing strategy, scope representation (stack of scopes), type info stored.
 * **Semantic checks implemented:** list checks (undeclared variables, re-declaration, type mismatch in binary ops, return type checks in functions, arity checks for function calls).
 * **Code generation / IR:** representation of temporaries, labels, and sample instruction format.
-
-## Author / Contact
-
-* **Author:**
-
 ---
 
