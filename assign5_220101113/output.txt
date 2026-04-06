@@ -1,0 +1,109 @@
+Token                Lexeme               Line No.            
+------------------------------------------------
+COMMENT              // Test file for nanoC lexical analyzer
+ 2                   
+COMMENT              /* This is a multi-line comment
+   testing various lexical elements */ 4                   
+COMMENT              // Testing keywords
+ 7                   
+KEYWORD              void                 7                   
+KEYWORD              int                  7                   
+KEYWORD              char                 7                   
+KEYWORD              if                   7                   
+KEYWORD              else                 7                   
+KEYWORD              for                  7                   
+KEYWORD              return               7                   
+COMMENT              // Testing identifiers
+ 10                  
+IDENTIFIER           variable123          10                  
+IDENTIFIER           _test                11                  
+IDENTIFIER           camelCase            12                  
+IDENTIFIER           UPPERCASE            13                  
+IDENTIFIER           mixed_Case_123       14                  
+COMMENT              // Testing integer constants
+ 17                  
+INTEGER_CONSTANT     42                   17                  
+INTEGER_CONSTANT     +100                 18                  
+INTEGER_CONSTANT     -999                 19                  
+INTEGER_CONSTANT     0                    20                  
+COMMENT              // Testing character constants
+ 23                  
+CHARACTER_CONSTANT   'a'                  23                  
+CHARACTER_CONSTANT   '\n'                 24                  
+CHARACTER_CONSTANT   '\t'                 25                  
+CHARACTER_CONSTANT   '\''                 26                  
+COMMENT              // Testing string literals
+ 29                  
+STRING_LITERAL       "Hello, World!"      29                  
+STRING_LITERAL       "Special chars: \n \t \\" 30                  
+STRING_LITERAL       ""                   31                  
+COMMENT              // Testing punctuators
+ 34                  
+PUNCTUATOR           [                    34                  
+PUNCTUATOR           ]                    34                  
+PUNCTUATOR           (                    34                  
+PUNCTUATOR           )                    34                  
+PUNCTUATOR           {                    34                  
+PUNCTUATOR           }                    34                  
+OPERATOR             ->                   34                  
+OPERATOR             &                    34                  
+OPERATOR             *                    34                  
+OPERATOR             +                    34                  
+OPERATOR             -                    34                  
+OPERATOR             /                    34                  
+OPERATOR             %                    34                  
+OPERATOR             !                    34                  
+OPERATOR             ?                    34                  
+OPERATOR             <                    35                  
+OPERATOR             >                    35                  
+OPERATOR             <=                   35                  
+OPERATOR             >=                   35                  
+OPERATOR             ==                   35                  
+OPERATOR             !=                   35                  
+OPERATOR             &&                   35                  
+OPERATOR             ||                   35                  
+OPERATOR             =                    35                  
+OPERATOR             :                    35                  
+PUNCTUATOR           ;                    35                  
+PUNCTUATOR           ,                    35                  
+COMMENT              // Testing expressions and statements
+ 38                  
+KEYWORD              int                  38                  
+IDENTIFIER           main                 38                  
+PUNCTUATOR           (                    38                  
+PUNCTUATOR           )                    38                  
+PUNCTUATOR           {                    38                  
+KEYWORD              int                  39                  
+IDENTIFIER           x                    39                  
+OPERATOR             =                    39                  
+INTEGER_CONSTANT     -42                  39                  
+PUNCTUATOR           ;                    39                  
+KEYWORD              char                 40                  
+IDENTIFIER           c                    40                  
+OPERATOR             =                    40                  
+CHARACTER_CONSTANT   'Z'                  40                  
+PUNCTUATOR           ;                    40                  
+KEYWORD              if                   41                  
+PUNCTUATOR           (                    41                  
+IDENTIFIER           x                    41                  
+OPERATOR             >                    41                  
+INTEGER_CONSTANT     0                    41                  
+PUNCTUATOR           )                    41                  
+PUNCTUATOR           {                    41                  
+KEYWORD              return               42                  
+INTEGER_CONSTANT     1                    42                  
+PUNCTUATOR           ;                    42                  
+PUNCTUATOR           }                    43                  
+KEYWORD              else                 43                  
+PUNCTUATOR           {                    43                  
+KEYWORD              return               44                  
+INTEGER_CONSTANT     0                    44                  
+PUNCTUATOR           ;                    44                  
+PUNCTUATOR           }                    45                  
+PUNCTUATOR           }                    46                  
+COMMENT              // Testing invalid tokens
+ 49                  
+Error: Invalid token '@' at line 49
+Error: Invalid token '#' at line 49
+Error: Invalid token '$' at line 49
+Error: Invalid token '`' at line 49
